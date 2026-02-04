@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Page</title>
+  <meta name="description" content="Personal page — Senior Full Stack Engineer specializing in scalable web applications and modern stacks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Hey Hey! Welcome to my Portfolio</h1>
-<p>This is my GitHub Pages website.</p>
+  <div class="page">
+    <div class="glow one"></div>
+    <div class="glow secondary two"></div>
+    <div class="glow three"></div>
+
+    <header>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="#summary">Summary</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Side Projects</a>
+          <a href="#education">Education</a>
+          <a href="#documents">Documents</a>
+        </div>
+        <a class="pill" href="#contact">Get in Touch</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="summary">
+        <div class="reveal">
+          <span class="eyebrow">Senior Full Stack Engineer · Berlin, Germany</span>
+          <h1>Boris Aghajanyan</h1>
+          <p>
+            10+ years of experience across PHP, Java (Spring Boot), TypeScript/React/Next.js,
+            and GraphQL/RESTful API design. Proven in monolith-to-microservices migrations,
+            operational efficiency, and cross-team technical leadership.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="mailto:boris.aghajanyan@gmail.com">boris.aghajanyan@gmail.com</a>
+          </div>
+        </div>
+        <div class="portrait-wrap reveal">
+          <img class="portrait" src="public/me.jpeg" alt="Portrait of Boris Aghajanyan" />
+          <p class="muted">Senior Full Stack Engineer</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-title reveal">
+          <h2>Key Skills</h2>
+          <p class="muted">Primary languages, platforms, and architectural strengths.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <h3>Backend & APIs</h3>
+            <p class="muted">High-scale services, API design, and end-to-end delivery on critical initiatives.</p>
+            <div class="skills">
+              <span>Java (Spring Boot)</span><span>PHP</span><span>GraphQL</span><span>REST</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <h3>Frontend</h3>
+            <p class="muted">Modern, maintainable interfaces with strong performance standards.</p>
+            <div class="skills">
+              <span>TypeScript</span><span>React</span><span>Next.js</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <h3>Architecture & Cloud</h3>
+            <p class="muted">Scalable systems, operational excellence, and cross-team leadership.</p>
+            <div class="skills">
+              <span>Microservices</span><span>GCP</span><span>Docker</span><span>Databases</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="section-title reveal">
+          <h2>Experience</h2>
+          <p class="muted">Senior engineering contributions across backend, frontend, and architecture.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <span class="tag">Wayfair · Sep 2018 – Nov 2025</span>
+            <h3>Full Stack Engineer</h3>
+            <p class="muted">
+              Served as technical lead and domain expert across critical supplier and fulfillment initiatives. Defined API
+              contracts across teams, led frontend modernization of key workflow tools, and delivered time‑sensitive
+              operational improvements to keep cross‑border fulfillment reliable. Streamlined exception handling to reduce
+              unexpected delays and improve overall system predictability.
+            </p>
+          </article>
+        </div>
+        <div class="experience-list reveal">
+          <div class="experience-row">
+            <strong>Deluxe Entertainment Services</strong>
+            <span class="muted">May 2017 – Aug 2018</span>
+          </div>
+          <div class="experience-row">
+            <strong>Scopic Software</strong>
+            <span class="muted">Sep 2016 – Feb 2017</span>
+          </div>
+          <div class="experience-row">
+            <strong>Upwork (Freelance)</strong>
+            <span class="muted">Nov 2012 – Jun 2013, Jul 2015 – Feb 2017</span>
+          </div>
+          <div class="experience-row">
+            <strong>Iguan Systems</strong>
+            <span class="muted">Feb 2012 – Nov 2012</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-title reveal">
+          <h2>Side Websites Built</h2>
+          <p class="muted">Independent work outside of primary employment.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card reveal card-link" href="https://www.findforme.info/" target="_blank" rel="noopener noreferrer">
+            <h3>FindForMe</h3>
+            <div class="card-url">findforme.info</div>
+            <p class="muted">
+              A plain‑English place finder built with Next.js, using Google Places API for filtering and Gemini
+              (generateContent) for text‑to‑content conversion.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="section-title reveal">
+          <h2>Education</h2>
+          <p class="muted">Academic background and formal training.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <strong>2015–2017 · M.S. Information Technologies — Yerevan State University</strong>
+            <span class="muted">Graduate studies focused on systems and software engineering.</span>
+          </div>
+          <div class="timeline-item reveal">
+            <strong>2009–2013 · B.S. Applied Mathematics & Informatics — Yerevan State University</strong>
+            <span class="muted">Foundational coursework in algorithms, math, and software development.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="documents">
+        <div class="section-title reveal">
+          <h2>Documents</h2>
+        </div>
+        <div class="card-grid">
+          <a class="card reveal card-link doc-card" href="public/ZendCertificate.pdf" target="_blank" rel="noopener noreferrer">
+            <img class="doc-logo" src="public/pdf-logo.svg" alt="" aria-hidden="true" />
+            <div class="doc-title">Zend Certificate (PHP)</div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="cta reveal">
+          <div>
+            <h2>Let’s build something remarkable.</h2>
+            <p class="muted">For referrals, job opportunities, or collaboration, please email me.</p>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="mailto:boris.aghajanyan@gmail.com">boris.aghajanyan@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/borisaghajanyan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/borisaghajanyan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Boris Aghajanyan. Berlin, Germany.</p>
+    </footer>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
