@@ -219,7 +219,8 @@ h2 {
   gap: 18px;
 }
 
-.experience .card-grid {
+.experience .card-grid,
+#projects .card-grid {
   grid-template-columns: 1fr;
 }
 
