@@ -5,77 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personal Page</title>
   <meta name="robots" content="noindex, nofollow" />
-  <meta name="description" content="Personal page — Senior Full Stack Engineer specializing in scalable web applications and modern stacks." />
+  <meta name="description" content="Personal page — Senior Backend / Full-Stack Engineer specializing in distributed systems, API design, and modern web stacks." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
-    <div class="glow one"></div>
-    <div class="glow secondary two"></div>
-    <div class="glow three"></div>
-
     <header>
       <nav class="nav">
+        <a class="mark" href="#top">BA<span class="dot">·</span></a>
         <div class="nav-links">
           <a href="#summary">Summary</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Side Projects</a>
+          <a href="#projects">Projects</a>
           <a href="#education">Education</a>
           <a href="#documents">Documents</a>
         </div>
-        <a class="pill" href="#contact">Get in Touch</a>
+        <a class="nav-cta" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="summary">
         <div class="reveal">
-          <span class="eyebrow">Senior Full Stack Engineer · Berlin, Germany</span>
-          <h1>Boris Aghajanyan</h1>
-          <p>
-            10+ years of experience across PHP, Java (Spring Boot), TypeScript/React/Next.js,
-            and GraphQL/RESTful API design. Proven in monolith-to-microservices migrations,
-            operational efficiency, and cross-team technical leadership.
+          <div class="meta-row">
+            <span class="meta-item"><span class="status-dot"></span>Berlin, Germany</span>
+            <span class="meta-item">German Citizen</span>
+            <span class="meta-item">Available for select engagements</span>
+          </div>
+          <h1>Boris<br />Aghajanyan</h1>
+          <p class="role">Senior Backend / Full-Stack Engineer</p>
+          <p class="summary-text">
+            Senior backend engineer with over 10 years scaling distributed systems, with hands-on
+            full-stack delivery in TypeScript and React. Specializes in service decomposition, API
+            design, and performance engineering, taking systems from legacy monoliths to
+            high-throughput microservices. Owns technical direction, partnering with product and
+            mentoring engineers through organizational and technical change.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="mailto:boris.aghajanyan@gmail.com">boris.aghajanyan@gmail.com</a>
+            <a class="btn primary" href="public/Boris_Aghajanyan_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+            <a class="btn ghost" href="mailto:boris.aghajanyan@gmail.com">boris.aghajanyan@gmail.com</a>
           </div>
         </div>
         <div class="portrait-wrap reveal">
           <img class="portrait" src="public/me.jpeg" alt="Portrait of Boris Aghajanyan" />
-          <p class="muted">Senior Full Stack Engineer</p>
         </div>
       </section>
 
       <section id="skills">
         <div class="section-title reveal">
-          <h2>Key Skills</h2>
-          <p class="muted">Primary languages, platforms, and architectural strengths.</p>
+          <span class="index">02</span>
+          <div>
+            <h2>Key Skills</h2>
+            <p class="muted">Primary languages, platforms, and architectural strengths.</p>
+          </div>
         </div>
-        <div class="card-grid">
+        <div class="card-grid skills-grid">
           <article class="card reveal">
-            <h3>Backend & APIs</h3>
-            <p class="muted">High-scale services, API design, and end-to-end delivery on critical initiatives.</p>
+            <h3>Backend & Distributed Systems</h3>
             <div class="skills">
-              <span>Java (Spring Boot)</span><span>PHP</span><span>GraphQL</span><span>REST</span>
+              <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>PHP</span><span>Microservices</span><span>Performance Engineering</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <h3>Architecture & APIs</h3>
+            <div class="skills">
+              <span>System Architecture</span><span>REST</span><span>GraphQL</span><span>API Design</span>
             </div>
           </article>
           <article class="card reveal">
             <h3>Frontend</h3>
-            <p class="muted">Modern, maintainable interfaces with strong performance standards.</p>
             <div class="skills">
-              <span>TypeScript</span><span>React</span><span>Next.js</span>
+              <span>TypeScript</span><span>React</span><span>Next.js</span><span>JavaScript</span>
             </div>
           </article>
           <article class="card reveal">
-            <h3>Architecture & Cloud</h3>
-            <p class="muted">Scalable systems, operational excellence, and cross-team leadership.</p>
+            <h3>Data</h3>
             <div class="skills">
-              <span>Microservices</span><span>GCP</span><span>Docker</span><span>Databases</span>
+              <span>PostgreSQL</span><span>MySQL</span><span>Elasticsearch</span><span>Kafka</span><span>Redis</span>
+            </div>
+          </article>
+          <article class="card reveal">
+            <h3>Infrastructure & Tooling</h3>
+            <div class="skills">
+              <span>Docker</span><span>Kubernetes</span><span>AWS</span><span>GCP</span><span>Jenkins</span><span>CI/CD</span><span>Git</span><span>Datadog</span><span>Grafana</span>
             </div>
           </article>
         </div>
@@ -83,54 +99,81 @@
 
       <section id="experience" class="experience">
         <div class="section-title reveal">
-          <h2>Experience</h2>
-          <p class="muted">Senior engineering contributions across backend, frontend, and architecture.</p>
+          <span class="index">03</span>
+          <div>
+            <h2>Experience</h2>
+            <p class="muted">Senior engineering contributions across backend, frontend, and architecture.</p>
+          </div>
         </div>
         <div class="card-grid">
           <article class="card reveal">
-            <span class="tag">Wayfair · Sep 2018 – Nov 2025</span>
-            <h3>Full Stack Engineer</h3>
+            <div class="card-head">
+              <h3>Independent Software Engineer</h3>
+              <span class="tag">Self-Employed · Dec 2025 – Present</span>
+            </div>
             <p class="muted">
-              Served as technical lead and domain expert across critical supplier and fulfillment initiatives. Defined API
-              contracts across teams, led frontend modernization of key workflow tools, and delivered time‑sensitive
-              operational improvements to keep cross‑border fulfillment reliable. Streamlined exception handling to reduce
-              unexpected delays and improve overall system predictability.
+              Building full-stack applications independently across new problem domains, taking each from
+              system design through deployment. Selected projects:
             </p>
+            <ul class="bullets">
+              <li><strong>Who Owes What</strong> (whooweswhat.me) — receipt-scanning bill-splitting PWA. React 19 + Vite monorepo, hand-rolled Node/TypeScript API, Neon serverless Postgres, AWS Textract OCR.</li>
+              <li><strong>Find For Me</strong> (findforme.info) — natural-language place search. Next.js 15, serverless API routes, Gemini function calling, Google Maps, Zod validation with custom rate limiting.</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <div class="card-head">
+              <h3>Senior Full Stack Engineer</h3>
+              <span class="tag">Wayfair · Sep 2018 – Nov 2025</span>
+            </div>
+            <ul class="bullets">
+              <li>Led the redesign and migration of fulfillment-domain services from a PHP monolith to Java/Spring Boot microservices, contributing to initiatives that generated millions of dollars in additional annual revenue and strengthening deployment independence, scalability, and long-term maintainability.</li>
+              <li>Architected and operated Kubernetes microservices for fulfillment pipelines, tuning horizontal pod autoscaling and memory allocation to reliably absorb 3x traffic surges during peak sales events.</li>
+              <li>Redesigned critical fulfillment processing pipelines — introducing Kafka-based async processing and Redis caching — cutting response times from several minutes to 100–300ms and raising operational throughput and customer experience.</li>
+              <li>Designed and implemented changes that unblocked EU–UK shipments following Brexit, improving international shipment processing and accuracy.</li>
+              <li>Led several front-end redesign projects, migrating legacy JavaScript applications into a unified TypeScript/Next.js monorepo architecture with unit and end-to-end (Cypress) test coverage.</li>
+              <li>Mentored a team of 5 engineers through a reorganization, ramping them up on a new project while preserving technical continuity across the fulfillment domain.</li>
+              <li>Served as technical domain expert and primary engineering point of contact across engineering, product, and operations.</li>
+            </ul>
           </article>
         </div>
         <div class="experience-list reveal">
           <div class="experience-row">
-            <strong>Deluxe Entertainment Services</strong>
-            <span class="muted">May 2017 – Aug 2018</span>
+            <strong>PHP Developer · Deluxe Entertainment Services</strong>
+            <span class="muted mono">May 2017 – Aug 2018</span>
           </div>
           <div class="experience-row">
-            <strong>Scopic Software</strong>
-            <span class="muted">Sep 2016 – Feb 2017</span>
+            <strong>PHP Developer · Scopic Software</strong>
+            <span class="muted mono">Sep 2016 – Feb 2017</span>
           </div>
           <div class="experience-row">
-            <strong>Upwork (Freelance)</strong>
-            <span class="muted">Nov 2012 – Jun 2013, Jul 2015 – Feb 2017</span>
-          </div>
-          <div class="experience-row">
-            <strong>Iguan Systems</strong>
-            <span class="muted">Feb 2012 – Nov 2012</span>
+            <strong>PHP Developer (Freelance) · Upwork / Iguan Systems</strong>
+            <span class="muted mono">Apr 2012 – Aug 2016</span>
           </div>
         </div>
       </section>
 
       <section id="projects">
         <div class="section-title reveal">
-          <h2>Side Websites Built</h2>
-          <p class="muted">Independent work outside of primary employment.</p>
+          <span class="index">04</span>
+          <div>
+            <h2>Side Websites Built</h2>
+            <p class="muted">Independent work outside of primary employment.</p>
+          </div>
         </div>
         <div class="card-grid">
           <a class="card reveal card-link" href="https://www.whooweswhat.me/" target="_blank" rel="noopener noreferrer">
-            <h3>Who Owes What</h3>
+            <div class="card-head">
+              <h3>Who Owes What</h3>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
             <div class="card-url">whooweswhat.me</div>
             <p class="muted">Receipt scanner and bill splitter PWA — scan, assign, share, settle; no account, works offline.</p>
           </a>
           <a class="card reveal card-link" href="https://www.findforme.info/" target="_blank" rel="noopener noreferrer">
-            <h3>FindForMe</h3>
+            <div class="card-head">
+              <h3>FindForMe</h3>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </div>
             <div class="card-url">findforme.info</div>
             <p class="muted">Plain‑English place finder built with Next.js, Google Places API, and Gemini.</p>
           </a>
@@ -139,50 +182,68 @@
 
       <section id="education">
         <div class="section-title reveal">
-          <h2>Education</h2>
-          <p class="muted">Academic background and formal training.</p>
+          <span class="index">05</span>
+          <div>
+            <h2>Education</h2>
+            <p class="muted">Academic background and formal training.</p>
+          </div>
         </div>
         <div class="timeline">
           <div class="timeline-item reveal">
-            <strong>2015–2017 · M.S. Information Technologies — Yerevan State University</strong>
-            <span class="muted">Graduate studies focused on systems and software engineering.</span>
+            <span class="mono muted timeline-date">2015–2017</span>
+            <div>
+              <strong>M.S. Information Technologies — Yerevan State University</strong>
+              <span class="muted">Graduate studies focused on systems and software engineering.</span>
+            </div>
           </div>
           <div class="timeline-item reveal">
-            <strong>2009–2013 · B.S. Applied Mathematics & Informatics — Yerevan State University</strong>
-            <span class="muted">Foundational coursework in algorithms, math, and software development.</span>
+            <span class="mono muted timeline-date">2009–2013</span>
+            <div>
+              <strong>B.S. Applied Mathematics & Informatics — Yerevan State University</strong>
+              <span class="muted">Foundational coursework in algorithms, math, and software development.</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="documents">
         <div class="section-title reveal">
-          <h2>Documents</h2>
+          <span class="index">06</span>
+          <div>
+            <h2>Documents</h2>
+          </div>
         </div>
-        <div class="card-grid">
-          <a class="card reveal card-link doc-card" href="public/ZendCertificate.pdf" target="_blank" rel="noopener noreferrer">
-            <img class="doc-logo" src="public/pdf-logo.svg" alt="" aria-hidden="true" />
-            <div class="doc-title">Zend Certificate (PHP)</div>
+        <div class="doc-list reveal">
+          <a class="doc-row" href="public/Boris_Aghajanyan_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="doc-ext">PDF</span>
+            <span class="doc-title">CV</span>
+            <span class="arrow" aria-hidden="true">↓</span>
+          </a>
+          <a class="doc-row" href="public/ZendCertificate.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="doc-ext">PDF</span>
+            <span class="doc-title">Zend Certificate (PHP)</span>
+            <span class="arrow" aria-hidden="true">↓</span>
           </a>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact-section">
         <div class="cta reveal">
-          <div>
-            <h2>Let’s build something remarkable.</h2>
-            <p class="muted">For referrals, job opportunities, or collaboration, please email me.</p>
-          </div>
+          <span class="index light">07</span>
+          <h2>Let’s build something remarkable.</h2>
+          <p class="muted">For referrals, job opportunities, or collaboration, please email me.</p>
           <div class="hero-actions">
             <a class="btn primary" href="mailto:boris.aghajanyan@gmail.com">boris.aghajanyan@gmail.com</a>
-            <a class="btn" href="https://www.linkedin.com/in/borisaghajanyan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="btn" href="https://github.com/borisaghajanyan" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn ghost light" href="https://www.linkedin.com/in/borisaghajanyan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn ghost light" href="https://github.com/borisaghajanyan" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Boris Aghajanyan. Berlin, Germany.</p>
+      <p>© 2026 Boris Aghajanyan</p>
+      <p>Berlin, Germany</p>
     </footer>
   </div>
 
